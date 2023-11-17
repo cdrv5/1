@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/cdrv5/1-1/1",
-      "program": "/home/cdrv5/1-1/1/build/Debug/outDebug",
+      "cwd": "/home/cdrv5/1-1/2",
+      "program": "/home/cdrv5/1-1/2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
