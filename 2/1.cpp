@@ -13,7 +13,9 @@ int main() {
     char message[1024];
     struct sockaddr_in client;
     socklen_t clientLen = sizeof(client);
-    ssize_t receivedBytes = recvfrom(serverSock, message, sizeof(message), 0,(struct sockaddr*)&client, &clientLen);
+    ssize_t receivedBytes = recvfrom(serverSock, message,
+     sizeof(message), 0,(struct sockaddr*)&client, 
+     &clientLen);
     sendto(serverSock, message, receivedBytes, 0, (struct sockaddr*)&client, clientLen);
     cout << "Received and echoed message: " << message << endl;
     close(serverSock);
